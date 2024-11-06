@@ -1,4 +1,3 @@
-AI Podcast Generator
 ![a-retro-illustration-of-a-ai-code-with-the-text-ai-hfVI_O-hSD-LzsYAP67WmQ-MNhlGKioTwCJPY9lSkkW9w](https://github.com/user-attachments/assets/acaaa93b-237f-4caf-80ee-c26c5618fb61)
 
 
