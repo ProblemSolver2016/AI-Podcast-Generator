@@ -3,16 +3,16 @@ AI Podcast Generator
 This project uses AI to generate podcasts based on the content of a provided PDF document. It combines Gradio for the interface, Hugging Face's Transformers library for speech recognition, and gTTS for text-to-speech. With a single PDF input, the system creates a conversational podcast script and generates an audio podcast in a few simple steps.
 Features
 
-    PDF-to-Text Extraction: Extracts text content from a PDF file.
-    Text Generation: Uses a local AI model (e.g., Ollama) to generate a podcast script from extracted text.
-    Text-to-Speech Conversion: Converts generated script to speech.
-    Gradio Interface: Interactive web interface for user input and podcast generation.
-    Configurable Options: Choose podcast duration, number of participants, and AI model to customize the generated podcast.
+* PDF-to-Text Extraction: Extracts text content from a PDF file.
+* Text Generation: Uses a local AI model (e.g., Ollama) to generate a podcast script from extracted text.
+* Text-to-Speech Conversion: Converts generated script to speech.
+* Gradio Interface: Interactive web interface for user input and podcast generation.
+* Configurable Options: Choose podcast duration, number of participants, and AI model to customize the generated podcast.
 
 Requirements
 
-    Python 3.7+
-    Libraries: gradio, torch, transformers, pydub, PyPDF2, gtts, requests, numpy, and ffmpeg (for audio processing).
+ * Python 3.7+
+ * Libraries: gradio, torch, transformers, pydub, PyPDF2, gtts, requests, numpy, and ffmpeg (for audio processing).
 
 Installation and Setup
 
