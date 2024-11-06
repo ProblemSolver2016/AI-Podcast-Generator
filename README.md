@@ -23,8 +23,6 @@ Steps
 Place install.sh in the same directory as podcastaiworking.py.
 Run the script with:
 
-bash
-
     chmod +x install.sh
     ./install.sh
 
