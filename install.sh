@@ -21,6 +21,10 @@ source venv/bin/activate
 
 # Install Python dependencies
 echo "Installing Python dependencies..."
+pip install -r requirements.txt
+
+# Install Python dependencies
+echo "Installing Python dependencies..."
 pip install --upgrade pip
 pip install gradio torch transformers pydub PyPDF2 gtts requests numpy
 
