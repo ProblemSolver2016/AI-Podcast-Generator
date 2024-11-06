@@ -19,40 +19,40 @@ Installation and Setup
 To set up and run the AI Podcast Generator, use the provided install_and_run.sh script for one-click installation.
 Steps
 
-    Place install.sh in the same directory as podcastaiworking.py.
-    Run the script with:
+Place install.sh in the same directory as podcastaiworking.py.
+Run the script with:
 
-    bash
+bash
 
     chmod +x install.sh
     ./install.sh
 
 The script will:
 
-    Update system dependencies
-    Install required Python packages
-    Start the Gradio application and serve it on http://0.0.0.0:7860
+* Update system dependencies
+* Install required Python packages
+* Start the Gradio application and serve it on http://0.0.0.0:7860
 
 Usage
 
-    Open the Gradio interface in your browser at http://0.0.0.0:7860.
-    Upload a PDF document for conversion.
-    Configure podcast settings:
-        Podcast Duration: Choose the desired podcast length in minutes.
-        Participants: Select the number of participants in the conversation.
-        Model: Choose a local AI model (e.g., Ollama or Mistral).
-    Click Generate Podcast to start the conversion process.
+* Open the Gradio interface in your browser at http://0.0.0.0:7860 or (http://127.0.0.1:7860)
+* Upload a PDF document for conversion.
+* Configure podcast settings:
+* Podcast Duration: Choose the desired podcast length in minutes.
+* Participants: Select the number of participants in the conversation.
+* Model: Choose a local AI model (e.g., Ollama or Mistral).
+* Click Generate Podcast to start the conversion process.
 
 Once completed, the interface will display:
 
-    A downloadable Transcript of the podcast.
-    The Generated Podcast audio for playback.
+* A downloadable Transcript of the podcast.
+* The Generated Podcast audio for playback.
 
 Project Structure
 
-    podcastaiworking.py: Main script for AI Podcast Generator.
-    install.sh: Installation and setup script for one-click deployment.
-    requirements.txt: List of Python dependencies.
+podcastaiworking.py: Main script for AI Podcast Generator.
+install.sh: Installation and setup script for one-click deployment.
+requirements.txt: List of Python dependencies.
 
 Troubleshooting
 
