@@ -1,0 +1,8 @@
+gradio==3.39.0
+torch==2.0.1  # Update to your installed PyTorch version, especially for CUDA compatibility
+transformers==4.44.2  # Matches your specified version
+pydub==0.25.1
+PyPDF2==3.0.1
+gTTS==2.3.2
+requests==2.31.0
+numpy==1.24.3
