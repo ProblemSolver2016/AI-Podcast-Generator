@@ -46,6 +46,7 @@ Once completed, the interface will display:
 
 * A downloadable Transcript of the podcast.
 * The Generated Podcast audio for playback.
+![Capture](https://github.com/user-attachments/assets/bca5fa06-735a-4bb4-88d5-c76a4e60f27c)
 
 Project Structure
 
@@ -59,3 +60,4 @@ If you encounter a ModuleNotFoundError, make sure all required Python packages a
 License
 
 This project is licensed under the MIT License.
+
