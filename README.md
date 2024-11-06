@@ -31,7 +31,7 @@ The script will:
 
 * Update system dependencies
 * Install required Python packages
-* Start the Gradio application and serve it on http://0.0.0.0:7860
+* Start the Gradio application and serve it on http://0.0.0.0:7860 or (http://127.0.0.1:7860)
 
 Usage
 
