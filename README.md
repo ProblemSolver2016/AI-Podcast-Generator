@@ -1,5 +1,4 @@
-![a-retro-illustration-of-a-ai-code-with-the-text-ai-hfVI_O-hSD-LzsYAP67WmQ-MNhlGKioTwCJPY9lSkkW9w](https://github.com/user-attachments/assets/acaaa93b-237f-4caf-80ee-c26c5618fb61)
-
+![a-logo-with-the-text-ai-podcast-generator-in-bold--DNU21NywRhKZuIke9TxT-g-g9vU2Ka2RSWmHW60gbz-CQ](https://github.com/user-attachments/assets/7e21a39b-c89b-4c58-9206-60f8fbdb9c93)
 
 This project uses AI to generate podcasts based on the content of a provided PDF document. It combines Gradio for the interface, Hugging Face's Transformers library for speech recognition, and gTTS for text-to-speech. With a single PDF input, the system creates a conversational podcast script and generates an audio podcast in a few simple steps.
 Features
