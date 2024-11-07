@@ -56,7 +56,3 @@ requirements.txt: List of Python dependencies.
 Troubleshooting
 
 If you encounter a ModuleNotFoundError, make sure all required Python packages are installed. Re-run install.sh to ensure dependencies are correctly set up.
-License
-
-This project is licensed under the MIT License.
-
