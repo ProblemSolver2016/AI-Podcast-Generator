@@ -16,7 +16,7 @@ Requirements
 
 Installation and Setup
 
-To set up and run the AI Podcast Generator, use the provided install_and_run.sh script for one-click installation.
+To set up and run the AI Podcast Generator, use the provided install.sh script for one-click installation.
 Steps
 
 Place install.sh in the same directory as podcastaiworking.py.
