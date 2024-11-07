@@ -1,4 +1,4 @@
-gradio==3.39.0
+gradio==4.44.1
 torch==2.0.1  # Update to your installed PyTorch version, especially for CUDA compatibility
 transformers==4.44.2  # Matches your specified version
 pydub==0.25.1
