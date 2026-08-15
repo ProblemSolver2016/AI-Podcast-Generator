@@ -3,7 +3,6 @@ import torch
 from transformers import Wav2Vec2Processor, Wav2Vec2ForCTC
 from pydub import AudioSegment
 import numpy as np
-import PyPDF2
 import os
 import tempfile
 import logging
@@ -12,7 +11,7 @@ import requests
 import json
 from pathlib import Path
 from gtts import gTTS
-
+from pypdf import PdfReader   # instead of: import PyPDF2
 # Set up logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
