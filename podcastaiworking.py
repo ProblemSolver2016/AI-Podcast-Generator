@@ -234,13 +234,28 @@ def create_gradio_interface():
 
 if __name__ == "__main__":
     logger.info("Starting AI Podcast Generator")
-    logger.info(f"Gradio version: {gr.__version__}")
-    logger.info(f"PyTorch version: {torch.__version__}")
-    
+
     iface = create_gradio_interface()
+
+    # Local-only by default. Set SHARE=1 to open a public tunnel, and set a
+    # username and password when you do — a public URL with no auth exposes
+    # your machine's models and file handling to anyone holding the link.
+    share = os.getenv("SHARE") == "1"
+    user = os.getenv("GRADIO_USER")
+    password = os.getenv("GRADIO_PASSWORD")
+
+    if share and not (user and password):
+        raise SystemExit(
+            "Refusing to share publicly without authentication.\n"
+            "Set GRADIO_USER and GRADIO_PASSWORD, or leave SHARE unset to "
+            "run on localhost only."
+        )
+
     iface.launch(
-        share=True,
-        debug=True,
-        server_name="0.0.0.0",
-        server_port=7860
+        share=share,
+        debug=False,                       # stack traces are not for visitors
+        server_name="0.0.0.0" if share else "127.0.0.1",
+        server_port=int(os.getenv("PORT", "7860")),
+        auth=(user, password) if share else None,
+        show_error=False,
     )
