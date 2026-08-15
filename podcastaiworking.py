@@ -84,20 +84,25 @@ class PodcastGenerator:
             logger.error(f"Error in text-to-speech conversion: {str(e)}")
             raise
 
-    def extract_text_from_pdf(self, pdf_file: str) -> str:
-        """
-        Extract text from PDF file
-        """
-        try:
-            text = ""
-            with open(pdf_file, "rb") as file:
-                reader = PyPDF2.PdfReader(file)
-                for page in reader.pages:
-                    text += page.extract_text() + "\n"
-            return text.strip()
-        except Exception as e:
-            logger.error(f"Error extracting PDF text: {str(e)}")
-            raise
+def extract_text_from_pdf(self, pdf_file: str) -> str:
+    """Extract text from a PDF, skipping pages that carry none."""
+    try:
+        parts = []
+        reader = PdfReader(pdf_file)
+        for page in reader.pages:
+            # Image-only pages return None rather than an empty string.
+            content = page.extract_text() or ""
+            if content.strip():
+                parts.append(content)
+        if not parts:
+            raise ValueError(
+                "No selectable text in this PDF. It is probably a scan; "
+                "run it through OCR first."
+            )
+        return "\n".join(parts).strip()
+    except Exception as e:
+        logger.error(f"Error extracting PDF text: {e}")
+        raise
 
     def generate_podcast_script(self, pdf_text: str, time_limit: int, num_participants: int) -> str:
         """
