@@ -18,15 +18,12 @@ cd "$PROJECT_DIR" || exit
 echo "Setting up Python virtual environment..."
 python3 -m venv venv
 source venv/bin/activate
-
+echo "Installing Python dependencies..."
+pip install --upgrade pip
+pip install -r requirements.txt
 # Install Python dependencies
 echo "Installing Python dependencies..."
 pip install -r requirements.txt
-
-# Install Python dependencies
-echo "Installing Python dependencies..."
-pip install --upgrade pip
-pip install gradio torch transformers pydub PyPDF2 gtts requests numpy
 
 # Run local AI server (Ollama)
 echo "Starting the local AI server (Ollama)..."
